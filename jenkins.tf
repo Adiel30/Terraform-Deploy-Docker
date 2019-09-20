@@ -18,12 +18,13 @@ resource "aws_instance" "jenkins-instance" {
         sudo yum -y install jenkins
         sudo yum -y install docker
         export PATH=/root/.local/bin:$PATH
-        sudo yum -y install python36
         wget -q https://bootstrap.pypa.io/get-pip.py
+        sudo yum -y install python36
         python3 get-pip.py --user
         pip3 install awscli --user
         curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
         export PATH=/usr/local/bin/:$PATH
+        tfswitch 0.11.9
         sudo service jenkins start
         sudo chkconfig jenkins on
     EOF

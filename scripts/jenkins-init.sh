@@ -51,6 +51,7 @@ pip3 install awscli --user
 # install terraform
 curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
 export PATH=/usr/local/bin/:$PATH
+tfswitch 0.11.9
 
 
 
