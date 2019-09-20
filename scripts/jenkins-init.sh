@@ -53,6 +53,7 @@ export PATH=/usr/local/bin:$PATH
 curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
 export PATH=/usr/local/bin/:$PATH
 tfswitch 0.11.9
+yum install git -y
 
 
 
