@@ -23,7 +23,7 @@ variable "ECS_AMI" {
 }
 
 variable "INSTANCE_DEVICE_NAME" {
-  default = "/dev/xvdh"
+  default = "/dev/xvdf"
 }
 
 variable "JENKINS_VERSION" {

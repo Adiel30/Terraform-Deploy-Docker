@@ -52,8 +52,7 @@ resource "aws_elb" "lab-elb" {
 
     subnets = [
         "${aws_subnet.floor1-public-subnet.id}",
-        "${aws_subnet.floor2-public-subnet.id}",
-        "${aws_subnet.floor3-public-subnet.id}"]
+        "${aws_subnet.floor2-public-subnet.id}"]
     security_groups = ["${aws_security_group.elb-lab-SEC_Group.id}"]
 
     tags {
